@@ -32,7 +32,7 @@ const App = () => {
         <h1 className='seconds-elapsed'>{currentTime.toFixed(3)}</h1>
         <section className='buttons'>
           <button className="start-btn" onClick={setRunning(true)}>START</button>
-          <button className="stop-btn" onClick={setRunning(true)}>STOP</button>
+          <button className="stop-btn" onClick={setRunning(false)}>STOP</button>
           <button className="lap-btn"onClick={handleLap}>LAP</button>
           <button className="reset-btn" onClick={()=>{setRunning(false),setCurrentTime(0),setlapvisi(false),setLaps([])}}>RESET</button>
         </section>
